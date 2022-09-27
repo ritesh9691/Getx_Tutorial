@@ -17,12 +17,15 @@ class HomeScreen extends StatelessWidget {
       body: Container(
         width: double.infinity,
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ElevatedButton(
-              onPressed: () {
-                Get.to(() => UserDetailes());
-              },
-              child: Text("go to next page"),
+            Center(
+              child: ElevatedButton(
+                onPressed: () {
+                  Get.to(() => UserDetailes());
+                },
+                child: Text("go to next page"),
+              ),
             ),
           ],
         ),
