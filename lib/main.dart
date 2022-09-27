@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:state_manegment/Pages/detail/view/detail.dart';
-import 'package:state_manegment/Pages/home/binding/home_binding.dart';
 
 import 'Pages/home/view/home.dart';
 
@@ -21,12 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-     getPages: [
-       GetPage(name: "/home", page: () => HomeScreen(), binding: HomeBinding(),),
-       GetPage(name: "/detail", page: () => DetailScreen()),
-     ],
-initialRoute: "/home",
+      home: HomeScreen(),
     );
   }
 }
-
